@@ -8,11 +8,23 @@ const Countries = ({ contriesPromise }) => {
   const [visitedCountry, setVisitedCountry]=useState([])
   const handleVisitedCountry=(country)=>{
     console.log(country)
+    const newVisitedCountry=[...visitedCountry, country]
+    setVisitedCountry(newVisitedCountry)
   }
   return (
     <div>
+      
       <h1 className='text-center my-4 text-5xl font-bold'>This is a world countries {countries.length}</h1>
       <h2 className='text-center my-4 text-3xl font-bold'>Visited Country length {visitedCountry.length}</h2>
+       <ol className='text-center list-decimal list-inside '>
+         {
+          visitedCountry.map(country=><li key={country.cca3.cca3}>
+             
+            {country.name.common}
+            </li>)
+        }
+       </ol>
+    
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-5'>
         {
           countries.map(country => <Country 
