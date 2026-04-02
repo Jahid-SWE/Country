@@ -30,9 +30,9 @@ const Countries = ({ contriesPromise }) => {
     
   // }
   return (
-    <div>
+    <div className='bg-cyan-600 p-2'>
 
-      <h1 className='text-center my-4 text-5xl font-bold'>This is a world countries {countries.length}</h1>
+      <h1 className='text-center my-4 text-5xl font-bold mt-5'>World countries </h1>
       <h2 className='text-center my-4 text-3xl font-bold'>Visited Country length {visitedCountry.length}</h2>
       <ol className='text-center list-decimal list-inside '>
         {

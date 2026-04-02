@@ -23,7 +23,7 @@ const Country = ({country, handleVisitedCountry, handleFlags}) => {
         <button onClick={handleVisited} className={`btn text-2xl font-bold p-3 mt-2 rounded-2xl cursor-pointer text-white transition-colors duration-300 
                 ${visited ? 'bg-green-500' : 'bg-red-500'}`}>{visited ? 'Visited' : 'Not Visited'}
         </button>
-        <button onClick={()=>handleFlags(country.flags.flags.png)} className='ml-2 bg-yellow-200 p-4 rounded-2xl cursor-pointer'>Visited Flag</button>
+        <button onClick={()=>handleFlags(country.flags.flags.png)} className='ml-2 bg-yellow-200 p-4 rounded-2xl cursor-pointer font-bold text-2xl'>Visited Country</button>
         {/* <h1>Currencies   {country.currencies.currencies.JMD.name} </h1> */}
         {/* <button onClick={()=>handleTravel(country)} className='bg-pink-300 p-4 ml-2 rounded-2xl cursor-pointer text-xl font-semibold '>Travel</button> */}
        
