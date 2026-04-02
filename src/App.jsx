@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<h1>Data is loading</h1>}>
+      <Suspense fallback={<h1 className='text-center font-bold text-6xl mt-96 animate-spin'>Loading </h1>}>
         <Countries contriesPromise={contriesPromise}></Countries>
       </Suspense>
     </>
